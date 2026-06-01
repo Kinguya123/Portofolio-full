@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Playfair Display", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc;
+  color: #1f2937;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.95);
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+.nav.active {
+  color: #2563eb;
+  border-bottom: 2px solid #2563eb;
+}
+
+/* Layout */
+.content {
+  padding-top: 110px;
+}
+
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+  color: white;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.hero p {
+  margin: 10px 0 30px;
+}
+
+.btn {
+  background: white;
+  color: #2563eb;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.icon {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+/* Form */
+.form {
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea, button {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px;
+  background: #1e293b;
+  color: white;
+}
