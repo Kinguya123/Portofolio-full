@@ -413,7 +413,7 @@ export default function AdminDashboard() {
     try {
       const result = await updateAbout(aboutData);
       if (result.success) {
-        showNotification('✅ Data Tentang Saya berhasil diperbarui!');
+        showNotification('✅ Data Profile berhasil diperbarui!');
         await fetchDashboardData();
       } else {
         showNotification(result.message || 'Gagal memperbarui profil', 'error');
