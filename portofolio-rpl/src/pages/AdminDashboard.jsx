@@ -70,7 +70,7 @@ export default function AdminDashboard() {
   const [previewUrl, setPreviewUrl] = useState('');
   const [selectedFile, setSelectedFile] = useState(null);
 
-  // State untuk Manajemen Profil Tentang Saya
+  // State untuk Manajemen Profil 
   const [aboutData, setAboutData] = useState({ nama: '', kelas: '', sekolah: '', bio: '' });
   const [aboutSaving, setAboutSaving] = useState(false);
 
